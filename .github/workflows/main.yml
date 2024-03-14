@@ -1,6 +1,5 @@
 name: Python package
-on:
-  push:
+on: [push]
 
 jobs:
   build:
@@ -20,4 +19,4 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run tests
-        run: python manage.py test
+        run: python myscript.py test
